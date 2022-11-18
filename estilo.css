@@ -1,0 +1,284 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  height:100vh;
+  background-image:url("https://cdn.discordapp.com/attachments/419346030270742529/1042867200068952124/magicpattern-gradient-1668709302516.png");
+  background-size: cover;
+
+}
+
+
+.container2{
+  display: flex;
+  justify-content: space-around;
+  flex-direction:row;
+  row-gap: 20px;
+  width: 50%;
+  flex-grow:1;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 30px;
+  color: solid black;
+  text-align: center;
+  padding-top:50px;
+}
+
+
+.Dashboard{
+  display:flex;
+  position: fixed;
+  z-index: 100;
+  height:20%;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+  background-color: rgba(69, 0, 196, 0.425);
+  background-image: url("https://cdn.discordapp.com/attachments/419346030270742529/1042669793943236609/magicpattern-svg-chart-1668662240110.png");
+  background-size:100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  overflow-y: hidden;
+
+}
+
+.Dashboard::-webkit-scrollbar{
+  display:none;
+}
+
+a{
+  color: ivory;
+  position:relative;
+  font-size:inherit;
+  letter-spacing: 1px;  
+  padding:0 10px;
+  opacity:0.8;
+  text-decoration: none;
+}
+
+a:visited { 
+  text-decoration: none; 
+  color: ivory; 
+ }
+
+a:after{
+  content: "";
+  position:absolute;
+  background-color: ivory;
+  height:4px;
+  width:0;
+  left:0;
+  transition: 0.3s;
+}
+
+a:hover:after{
+  width:200%;
+
+}
+
+.Nome{
+  order:0;
+  font-size: 60px;
+  margin-left: 25px;
+  color:ivory;
+  flex-grow: 2;
+  background-image: url("https://cdn.discordapp.com/attachments/419346030270742529/1042664321173430393/magicpattern-blob-1668660937292.png");
+  background-size: cover;
+  opacity: 0.8;
+  padding:60px;
+  background-repeat: no-repeat;
+  background-position:center left;
+  background-position-x:10%, left;
+}
+
+.Nome img{
+  position:relative;
+}
+
+.Github img{
+  order:0;
+  width:96px;
+  height:96px;
+}
+
+.Links img{
+  order:1;
+  width: 96px;
+  height:96px;
+  
+}
+
+
+.Sobre{
+  order:2;
+}
+
+.Contato{
+  order:3;
+}
+
+.Contato img{
+  width:96px;
+  height:96px;
+}
+
+.container3{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  padding-top: 550px;
+  text-align: center;
+  max-width: 1200px;
+  margin:auto;
+  position:relative;
+
+
+}
+
+.projetos{
+  border-radius: 10px;
+  width:33.33%;
+  position:absolute;
+  color:rgb(224, 217, 228);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  transition: all 400ms ease;
+  margin-top:-250px;
+
+}
+
+.projetos:hover:not(.ativo).esquerda{
+  transform: translateX(-50%) rotate(-10deg) scale(0.9);
+}
+
+.projetos:hover:not(.ativo).direita{
+  transform: translateX(50%) rotate(10deg) scale(0.9);
+}
+
+.projetos.esquerda{
+  transform: translateX(-50%) scale(0.9);
+}
+
+.projetos.direita{
+  transform: translateX(50%) scale(0.9);
+}
+
+.projetos.ativo{
+  z-index:5;
+  position:relative;
+}
+
+.projetos__inner{
+  position:relative;
+  padding-bottom: 150%;
+}
+
+h1{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 76px;
+  margin-bottom: 20px;
+}
+
+.DP{
+  position:relative;
+  text-align:center;
+  font-size:38px;
+  padding-bottom:20px;
+  text-decoration: underline;
+  text-underline-offset:9px;
+}
+
+
+.SobreEscrita{
+  text-align: center;
+  margin-top: 100px;
+  border:10px;
+  padding:10px;
+  height:fit-content;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  background-color: #6600fe;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%2313042a' fill-opacity='0.17'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-radius: 20px;
+  font-size:38px;
+  color:rgba(255, 255, 240, 0.719);
+}
+
+.SobreEscrita h3{
+  color:rgba(255, 255, 240, 0.767);
+  padding-top: 50px;
+  font-size: 76px;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+.texto{
+  padding:20px;
+  display:block;
+
+}
+
+.Formulario{
+  padding-top:250px;
+  text-align: center;
+  background-image: url("https://cdn.discordapp.com/attachments/419346030270742529/1043275494201770145/magicpattern-svg-chart-1668806626828.png");
+  background-size: cover;
+  background-position:top;
+  height:100%;
+}
+
+.Formulario img{
+  width: 100%;
+  height:25%;
+}
+
+h4{
+  font-size: 76px;
+}
+
+.Formulario input[type=text],
+.Formulario input[type=email]{
+  padding-left: 10px;
+  font-size: 25px;
+  display:block;
+  border-radius: 20px;
+  max-width: 500px;
+  margin:10px auto;
+  width: 100%;
+  height:50px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.Formulario textarea{
+  resize: vertical;
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 25px;
+}
+
+.Formulario button[type=submit]{
+  padding-left: 10px;
+  font-size: 25px;
+  display:block;
+  border-radius: 20px;
+  max-width: 500px;
+  margin:10px auto;
+  width: 100%;
+  height:50px;
+  background-color: #8f8f8f;
+  cursor: pointer;
+}
